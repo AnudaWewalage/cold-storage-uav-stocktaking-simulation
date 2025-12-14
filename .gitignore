@@ -1,0 +1,12 @@
+# Python virtual environment (located in project root)
+Include/
+Lib/
+Scripts/
+share/
+pyvenv.cfg
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Tutorials (non-research material)
+tutorials/
