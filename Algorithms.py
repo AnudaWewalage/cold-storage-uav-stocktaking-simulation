@@ -46,7 +46,7 @@ class MEAStar:
         x2, y2, z2 = self.graph.nodes[node2]['x'], self.graph.nodes[node2]['y'], self.graph.nodes[node2]['z']
 
         distance = ((x2 - x1) ** 2 + (y2 - y1) ** 2 + (z2 - z1) ** 2) ** 0.5
-        return distance
+        return distance * 2.5
 
     def calculate_heuristic_values(self, goal):
         """
@@ -780,7 +780,7 @@ class MACO:
 
             for ant in range(self.n_ants):
                 start_node = np.random.choice([0, 100])
-                tour, cost = self.construct_tour_with_terminals(start_node)
+                tour, cost = self.construct_tour_with_terminals(int(start_node))
                 all_tours.append((tour, cost))
 
                 # Update best solution
