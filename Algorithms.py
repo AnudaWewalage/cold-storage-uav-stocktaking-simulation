@@ -652,7 +652,7 @@ class MACO:
         if current in (0, 100) and current != start:
             return None, float('inf')
 
-        end_node = np.random.choice(possible_ends)
+        end_node = int(np.random.choice(possible_ends))
 
         edge_cost = self.get_edge_cost(current, end_node)
         if edge_cost == float('inf'):

@@ -1,4 +1,4 @@
-MAinimport random
+import random
 import networkx as nx
 from typing import List
 from Algorithms import AStar
